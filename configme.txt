@@ -1,0 +1,8 @@
+{
+    "my_name": "<<<>>>",
+    "url": "<<<>>>",
+    "key": "<<<>>>",
+    "receive_time": 2,
+    "my_timezone": "Asia/Dhaka",
+    "date_time_format": "%d-%b-%a %H:%M"    
+}
