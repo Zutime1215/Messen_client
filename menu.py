@@ -5,7 +5,7 @@ from cryptography.fernet import Fernet
 def generateKey():
     return Fernet.generate_key()
 
-base_url   = "http://localhost:8080"
+base_url   = "https://moray-welcomed-barely.ngrok-free.app"
 create_url = base_url + "/createRoom"
 rooms_url  = base_url + "/rooms"
 
