@@ -6,8 +6,8 @@ with open("configme.txt") as file:
     data = json.loads(file.read())
     my_name = data["my_name"]
     key = data["key"]
-    url = data["url"][:49]
-    room_id = data["url"][50:]
+    url = data["base_url"] + "/room"
+    room_id = data["room_id"]
 
 
 fernet = Fernet(key)

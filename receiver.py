@@ -10,7 +10,7 @@ with open("configme.txt") as file:
     data = json.loads(file.read())
     my_name = data["my_name"]
     key = data["key"]
-    url = data["url"]
+    url = data["base_url"] + "/room/" + data["room_id"]
     my_timezone = data["my_timezone"]
     date_time_format = data["date_time_format"]
     receive_time = data["receive_time"]

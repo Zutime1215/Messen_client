@@ -1,7 +1,8 @@
 {
     "my_name": "<<<>>>",
-    "url": "<<<>>>",
+    "room_id": "<<<>>>",
     "key": "<<<>>>",
+    "base_url": "https://vocal-incredibly-starfish.ngrok-free.app",
     "receive_time": 2,
     "my_timezone": "Asia/Dhaka",
     "date_time_format": "%d-%b-%a %H:%M"    

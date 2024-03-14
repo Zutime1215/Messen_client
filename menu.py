@@ -4,8 +4,11 @@ from cryptography.fernet import Fernet
 
 def generateKey():
     return Fernet.generate_key()
+    
+with open("configme.txt") as file:
+    data = json.loads(file.read())
+    base_url = data["base_url"]
 
-base_url   = "https://moray-welcomed-barely.ngrok-free.app"
 create_url = base_url + "/createRoom"
 rooms_url  = base_url + "/rooms"
 
@@ -25,7 +28,7 @@ Press 0 - To Exit
             print("<<<<>>> Your Room Name must be in 32 Characters. Your Room description must be in 100 Characters.")
         elif r["status"] == 132:
             print("\n")
-            print("<<<>>> Edit the configme.txt file and replace the url to " + r["url"] )
+            print("<<<>>> Edit the configme.txt file and replace the room_id <<<>>> with " + str(r["room_id"]) )
             print(f"<<<>>> Here is your key => {generateKey().decode()}")
             print("<<<>>> This key is client side generated. Server do not have this. Anyone with this key and url can read your message! Store this key. without it, you cannot decrypt messages.")
     elif n == "2":
